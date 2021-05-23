@@ -7,7 +7,7 @@ Explanation:
 First released in 1972 by Atari Inc. for the Arcade System, Pong is a very simple game consisting of two paddles and a ball.
 
 
-You take control of the one of the two paddles, both opposite each other on the two sides of the screen. 
+You take control of one of the two paddles, both opposite each other on the two sides of the screen. 
 
 
 The aim is to hit the ball back at the opponent, by moving your paddle on the verticle axis. The opponent will equally send the ball back towards you if it collides with its paddle.
