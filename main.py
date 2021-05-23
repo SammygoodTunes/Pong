@@ -14,7 +14,7 @@ class Window:
 	def __init__(self, width=750, height=500, fullscreen=False):
 		self.width, self.height = width, height
 		self.screen = pygame.display.set_mode([self.width, self.height])
-		self.fullscreen=False
+		self.fullscreen = fullscreen
 		self.clock = pygame.time.Clock()
 
 
