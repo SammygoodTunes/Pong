@@ -21,8 +21,10 @@ class Window:
 	def set_fullscreen(self, fullscreen):
 		self.fullscreen = fullscreen
 		if self.fullscreen:
+			pygame.display.quit()
 			self.screen = pygame.display.set_mode([self.width, self.height], pygame.FULLSCREEN)
 		else:
+			pygame.display.quit()
 			self.screen = pygame.display.set_mode([self.width, self.height])
 
 
@@ -39,7 +41,8 @@ class Window:
 
 
 	def clear(self):
-		self.screen.fill((0, 0, 0), (0, 0, self.width, self.height))
+		#adds 16 to update 16px out of the frame when in fullscreen
+		self.screen.fill((0, 0, 0), (-16, -16, self.width + 16, self.height + 16))
 
 
 class Game:
@@ -105,9 +108,7 @@ class Ball:
 
 
 	def invert_velocity_x(self, velocity):
-		print("before",self.velocity)
 		self.velocity = (-velocity[0], velocity[1])
-		print("after",self.velocity)
 
 
 	def invert_velocity_y(self, velocity):
@@ -382,7 +383,6 @@ def main():
 				ball.set_pos(player.get_pos()[0] + player.get_width() + ball.get_speed(), ball.get_pos()[1])
 				ball.set_speed(ball.get_speed() + ball.get_adder())
 				pygame.mixer.Channel(0).play(pygame.mixer.Sound('src/paddle.wav'))
-				print(ball.get_velocity())
 
 		#enemy paddle collision
 		if ball.get_pos()[0] > enemy.get_pos()[0] and ball.get_pos()[0] < enemy.get_pos()[0] + enemy.get_width() + ball.get_speed():
@@ -409,7 +409,7 @@ def main():
 
 
 		#lose
-		if ball.get_pos()[0] < -8:
+		if ball.get_pos()[0] < -16:
 			ball.set_pos(win.get_width() / 2, win.get_height() / 2)
 			ball.set_speed(speed)
 			ball.set_angle(random.randint(45, 50))
@@ -418,7 +418,7 @@ def main():
 			pygame.mixer.Channel(0).play(pygame.mixer.Sound('src/lose.wav'))
 
 		#win
-		if ball.get_pos()[0] > win.get_width() + 8:
+		if ball.get_pos()[0] > win.get_width() + 16:
 			ball.set_pos(win.get_width() / 2, win.get_height() / 2)
 			ball.set_speed(speed)
 			ball.set_angle(random.randint(45, 50))
