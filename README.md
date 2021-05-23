@@ -30,7 +30,16 @@ Controls:
 [Up/Down Arrow Keys] -> Move your paddle
 
 
+[Space] -> Enable 2-player mode
+
+
+[Keypad 8/2] -> Move second paddle, when 2-player mode is enabled
+
+
 [F11] -> Fullscreen
+
+
+[Escape] -> Pause game
 
 
 The two numbers above correspond to the player's points (left) and the opponent's points (right).
