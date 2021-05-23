@@ -434,7 +434,7 @@ def main():
 			else:
 				player.set_pos(player.get_pos()[0], player.get_pos()[1] - player.get_speed())
 
-		#player down movement
+		#player down movement if not paused
 		if player.get_down() and not game.get_pause():
 			if player.get_pos()[1] >= win.get_height() - player.get_height():
 				player.set_pos(player.get_pos()[0], win.get_height() - player.get_height())
