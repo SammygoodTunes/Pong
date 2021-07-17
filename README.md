@@ -1,8 +1,7 @@
 # Pong
 Replica of the original Pong game
 
-Explanation:
-===================
+## Explanation:
 
 First released in 1972 by Atari Inc. for the Arcade System, Pong is a very simple game consisting of two paddles and a ball.
 
@@ -24,8 +23,7 @@ Here are the set of features:
 3- The speed of the ball increases by .005 for every paddle hit, making it more difficult to hit it back towards each other the longer the ball doesn't fall too far off a side.
 
 
-Controls:
-===================
+## Controls:
 
 [Up/Down Arrow Keys] -> Move your paddle
 
@@ -45,8 +43,7 @@ Controls:
 The two numbers above correspond to the player's points (left) and the opponent's points (right).
 
 
-Installation information:
-===================
+## Installation information:
 
 A "requirements" text file is provided within the repository.
 
@@ -73,8 +70,7 @@ To install the game without necessary libraries:
 3- The installation file should have extracted all the necessary resources including the EXE file, that you can run without needing Python or any of the libraries used during development
 
 
-Development information:
-===================
+## Development information:
 
 Developed by: SammygoodTunes
 
