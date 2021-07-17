@@ -48,7 +48,7 @@ The two numbers above correspond to the player's points (left) and the opponent'
 A "requirements" text file is provided within the repository.
 
 
-To install the necessary library(ies) to run the script:
+### To install the necessary library(ies) to run the script:
 
 1- Open CMD or GitBash
 
@@ -59,7 +59,7 @@ To install the necessary library(ies) to run the script:
 3- Install the library(ies) from the "requirements.txt" file (pip install -r requirements.txt)
 
 
-To install the game without necessary libraries:
+### To install the game without necessary libraries:
 
 1- Locate the installation file "Pong-X.X-Installer.exe"
 
