@@ -14,13 +14,13 @@ The aim is to hit the ball back at the opponent, by moving your paddle on the ve
 
 Here are the set of features:
 
-1- If the ball goes too far off your side, your opponent will gain one point (right digit).
+* If the ball goes too far off your side, your opponent will gain one point (right digit).
 
 
-2- If the ball goes too far off your opponent's side, you'll gain one point (left digit).
+* If the ball goes too far off your opponent's side, you'll gain one point (left digit).
 
 
-3- The speed of the ball increases by .005 for every paddle hit, making it more difficult to hit it back towards each other the longer the ball doesn't fall too far off a side.
+* The speed of the ball increases by .005 for every paddle hit, making it more difficult to hit it back towards each other the longer the ball doesn't fall too far off a side.
 
 
 ## Controls:
@@ -56,8 +56,10 @@ A "requirements" text file is provided within the repository.
 2- Change the current directory to the project path (cd path\\to\\project)
 
 
-3- Install the library(ies) from the "requirements.txt" file (pip install -r requirements.txt)
-
+3- Install the library(ies) from the "requirements.txt" file using:
+  ```
+  pip install -r requirements.txt
+  ```
 
 ### To install the game without necessary libraries:
 
